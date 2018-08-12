@@ -23,7 +23,7 @@ RUN mkdir -p /usr/include/boost && tar zxf boost_1_66_0.tar.gz -C /usr/include/b
 
 RUN echo ${BOOST_ROOT}
 
-RUN     wget https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.148-1_amd64 && \
+RUN     wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local_8.0.148-1_amd64 && \
         dpkg -i cuda-repo-ubuntu1604-9-2-local_9.2.148-1_amd64 && \
         apt-get update && \
         apt-key add /var/cuda-repo-9-2-local/7fa2af80.pub && \
