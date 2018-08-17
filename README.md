@@ -1,3 +1,39 @@
+# About
+
+nheqminer is a CPU/GPU miner for Equihash, as well as a CPU miner for VerusHash.
+
+This allows you to mine Komodo, VerusCoin, and assetchains.
+
+
+### To cpu mine equihash (KMD)
+
+Download or build, and then run:
+
+`./nheqminer -t 4 -l stratum.komodo.services:3333 -u RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR.worker1 -p x` 
+
+-t being the number of cpu threads
+
+
+### To cpu mine verushash (VRSC)
+
+Download or build, and then run:
+
+`./nheqminer -v -t 4 -l na.luckpool.net:1234 -u RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR.worker1 -p x` 
+
+-v enables VerusHash
+
+-t being the number of cpu threads
+
+
+### To gpu mine equihash (KMD)
+
+Download or build, and then run:
+
+`./nheqminer -cd 0 1 -l stratum.komodo.services:3333 -u RCBAk2iW2A5GGQQ6u1dtcK1ZGRr8q9cTRR.worker1 -p x` 
+
+-cd being CUDA graphics cards 0 and 1
+
+
 # Build instructions:
 
 ### Dependencies:
