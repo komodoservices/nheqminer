@@ -34,7 +34,21 @@ Download or build, and then run:
 -cd being CUDA graphics cards 0 and 1
 
 
-# Build instructions:
+# Use nheqminer:
+
+Build from the instructions below. 
+
+
+## Build instructions:
+
+`sudo apt-get update`
+`sudo apt-get -y upgrade`
+`sudo apt-get -y install build-essential cmake libboost-all-dev git`
+`git clone https://github.com/komodoservices/nheqminer`
+`mkdir nheqminer/build && cd nheqminer/build`
+`cmake -DUSE_CUDA_DJEZO=0 -DUSE_CPU_XENONCAT=0 ..`
+`make -j$(nproc)`
+
 
 ### Dependencies:
   - Boost 1.62+
